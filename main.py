@@ -18,7 +18,8 @@ def main():
     print(liczba_ksiaze)
 
     for _ in range(int(liczba_ksiaze)):
-        ksiazka = eval(input())
+        dane_ksiazki = eval(input())
+        ksiazka = Ksiazka(dane_ksiazki)
         print(ksiazka)
         print(f'typ: {type(ksiazka)}')
 
