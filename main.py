@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+import ast
 
 @dataclass(frozen=True, order=True)
 class Ksiazka:
@@ -17,7 +18,7 @@ def main():
     print(liczba_ksiaze)
 
     for _ in range(int(liczba_ksiaze)):
-        ksiazka = input()
+        ksiazka = eval(input())
         print(ksiazka)
         print(f'typ: {type(ksiazka)}')
 
