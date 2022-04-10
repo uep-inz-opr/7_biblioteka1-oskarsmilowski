@@ -22,11 +22,10 @@ class Biblioteka:
 
 
 def main():
-    liczba_ksiaze = input()
-    print(liczba_ksiaze)
+    liczba_ksiazek = input()
     biblioteka = Biblioteka({})
 
-    for _ in range(int(liczba_ksiaze)):
+    for _ in range(int(liczba_ksiazek)):
         dane_ksiazki = eval(input())
         ksiazka = Ksiazka(*dane_ksiazki)
 
