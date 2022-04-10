@@ -16,7 +16,7 @@ def main():
     liczba_ksiaze = input()
     print(liczba_ksiaze)
 
-    for _ in range(int(liczba_ksiaze))
+    for _ in range(int(liczba_ksiaze)):
         ksiazka = input()
         print(ksiazka)
 
