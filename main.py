@@ -19,6 +19,7 @@ def main():
     for _ in range(int(liczba_ksiaze)):
         ksiazka = input()
         print(ksiazka)
+        print(f'typ: {type(ksiazka)}')
 
 if __name__ == "__main__":
     main()
