@@ -2,13 +2,13 @@ from dataclasses import dataclass
 from operator import itemgetter
 import ast
 
-@dataclass(frozen=True, order=True)
+@dataclass(frozen=True)
 class Ksiazka:
     tytul: str
     autor: str
     rok: int
 
-@dataclass(frozen=True, order=True)
+@dataclass(frozen=True)
 class Biblioteka:
     ksiazki: dict()
 
